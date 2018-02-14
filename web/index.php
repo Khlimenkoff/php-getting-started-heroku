@@ -8,7 +8,7 @@
 </head>
 <body>
   <?php if (isset($_GET['submitted'])) { ?>
-  <div style="border: solid red 1px">
+  <div name="begunok" style="border: solid red 1px">
     <h1>The server had accepted:</h1>
     <p>Radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
     <p>Text: <?php echo htmlspecialchars($_GET['text']); ?></p>
@@ -38,6 +38,8 @@
       <input id="e-mail" name="pismo" type="e-mail" required></p>
       <p><label for="checkbox">Checkbox: </label>
       <input id="checkbox" name="galochka" type="checkbox" required></p>
+      <p><label for="checkbox">Range: </label>
+      <input type="range" id="range" name="begunok" min="1" max="100" required></p>
     </div>
     <br>
     <input type="submit" value="Submit">
