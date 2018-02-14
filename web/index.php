@@ -9,15 +9,18 @@
 <body>
 Hello
   <?php if (isset($_GET['submitted'])) { ?>
+  <div style="border: solid red 1px">
     <h1>The server had accepted:</h1>
     <p>radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
     <p>text: <?php echo htmlspecialchars($_GET['text']); ?></p>
     <p>text-area: <?php echo htmlspecialchars($_GET['area']); ?></p>
     <p>Try again? <a href="/index.php">Yes!</a></p>
+    </div>
   <?php } ?>
 
   <?php if (!isset($_GET['submitted'])) { ?>
   
+  <div style="background-color: blue">
   <h1>Play with the HTML form</h1>
   <form action="/index.php">
     <input type="hidden" name="submitted" value="yes">
@@ -27,15 +30,15 @@ Hello
       <p><label for="my-radio-no">radio No: </label>
       <input id="my-radio-no" name="radio" type="radio" required value="No"></p>
       <p><label for="text-field">text field</label>
-      <input id="text-field" name="text" type="text" required value="Yes"></p>
+      <input id="text-field" name="text" type="text" required></p>
       <p><label for="text-area">text area</label>
-      <input id="text-area" name="area" type="area" required value="Yes"></p>
+      <input id="text-area" name="area" type="area" required></p>
     </div>
     <br>
     <input type="submit" value="Submit">
     <input type="reset" value="Clear">
   </form>
-
+  </div>
   <?php } ?>
 
 </body>
