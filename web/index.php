@@ -21,16 +21,16 @@ Hello
   <h1>Play with the HTML form</h1>
   <form action="/index.php">
     <input type="hidden" name="submitted" value="yes">
-    <p>
-      <label for="my-radio-yes">radio Yes: </label><br>
-      <input id="my-radio-yes" name="radio" type="radio" required value="Yes">
-      <label for="my-radio-no">radio No: </label><br>
-      <input id="my-radio-no" name="radio" type="radio" required value="No">
-      <label for="text-field">text field</label><br>
-      <input id="text-field" name="text" type="text" required value="Yes">
-      <label for="text-area">text area</label><br>
-      <input id="text-area" name="area" type="area" required value="Yes">
-    </p>
+    <div>
+      <p><label for="my-radio-yes">radio Yes: </label>
+      <input id="my-radio-yes" name="radio" type="radio" required value="Yes"> </p>
+      <p><label for="my-radio-no">radio No: </label>
+      <input id="my-radio-no" name="radio" type="radio" required value="No"></p>
+      <p><label for="text-field">text field</label>
+      <input id="text-field" name="text" type="text" required value="Yes"></p>
+      <p><label for="text-area">text area</label>
+      <input id="text-area" name="area" type="area" required value="Yes"></p>
+    </div>
     <br>
     <input type="submit" value="Submit">
     <input type="reset" value="Clear">
