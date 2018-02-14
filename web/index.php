@@ -7,7 +7,6 @@
   <title>Form test</title>
 </head>
 <body>
-Hello
   <?php if (isset($_GET['submitted'])) { ?>
   <div style="border: solid red 1px">
     <h1>The server had accepted:</h1>
@@ -20,7 +19,7 @@ Hello
 
   <?php if (!isset($_GET['submitted'])) { ?>
   
-  <div style="background-color: blue">
+  <div style="background-color: lightblue; border-radius:20px; width: 400px; padding:20%">
   <h1>Play with the HTML form</h1>
   <form action="/index.php">
     <input type="hidden" name="submitted" value="yes">
