@@ -15,6 +15,7 @@
     <p>Text-area: <?php echo htmlspecialchars($_GET['area']); ?></p>
     <p>E-mail: <?php echo htmlspecialchars($_GET['pismo']); ?></p>
     <p>Checkbox: <?php echo htmlspecialchars($_GET['galochka']); ?></p>
+    <div style="background:<?php echo htmlspecialchars($_GET['cvet']); ?>">&nbsp;&nbsp;&nbsp;&nbsp;</div>
     <p>Try again? <a href="/index.php">Yes!</a></p>
     </div>
   <?php } ?>
@@ -38,8 +39,8 @@
       <input id="e-mail" name="pismo" type="e-mail" required></p>
       <p><label for="checkbox">Checkbox: </label>
       <input id="checkbox" name="galochka" type="checkbox" required></p>
-      <p><label for="checkbox">Range: </label>
-      <input type="range" id="range" name="begunok" min="1" max="100" required></p>
+      <p><label for="color">Color: </label>
+      <input type="color" id="color" name="cvet" required></p>
     </div>
     <br>
     <input type="submit" value="Submit">
