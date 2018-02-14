@@ -8,7 +8,7 @@
 </head>
 <body>
   <?php if (isset($_GET['submitted'])) { ?>
-  <div name="begunok" style="border: solid red 1px">
+  <div name="begunok" style="border: solid red 1px; border-radius:20px; width: 200px">
     <h1>The server had accepted:</h1>
     <p>Radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
     <p>Text: <?php echo htmlspecialchars($_GET['text']); ?></p>
