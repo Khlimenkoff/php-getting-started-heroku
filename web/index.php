@@ -21,12 +21,12 @@ Hello
   <form action="/index.php">
     <input type="hidden" name="submitted" value="yes">
     <p>
-      <label for="my-radio-yes">radio Yes: </label>
+      <label for="my-radio-yes">radio Yes: </label><br>
       <input id="my-radio-yes" name="radio" type="radio" required value="Yes">
-      <label for="my-radio-no">radio No: </label>
+      <label for="my-radio-no">radio No: </label><br>
       <input id="my-radio-no" name="radio" type="radio" required value="No">
-      <label for="text-field">text field</label>
-      <input id="text-field" name="text" type="text" required value="Yes>
+      <label for="text-field">text field</label><br>
+      <input id="text-field" name="text" type="text" required value="Yes">
     </p>
     <br>
     <input type="submit" value="Submit">
